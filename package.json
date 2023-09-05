@@ -13,6 +13,8 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@vueuse/firebase": "^10.4.1",
+    "firebase": "^10.3.1",
     "vue": "^3.2.37",
     "vue-router": "^4.2.4"
   },

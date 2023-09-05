@@ -14,7 +14,12 @@ const {isAuthenticated, logout, user} = useAuth()
         </RouterLink>
         <div class="menu">
             <!---<RouterLink :to="{name: 'Home'}" class="menu-item">Departments</RouterLink>-->
- 
+            <p v-show="isAuthenticated" class="px-2 py-4">
+            Welcome back
+            <strong>
+                <i>{{ user?.email }}</i>
+            </strong>
+            </p>
             
             <div v-if="isAuthenticated">
                 <i v-show="isAuthenticated" class="px-2 py-4">Welcome {{user.name}}</i>
